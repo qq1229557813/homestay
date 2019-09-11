@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<!--时间插件-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+    <!--时间插件-->
+    
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<body style="min-width: 0;">
+		
+    <div class="web_ezent">
+    	 <div class="ezent_tite">
+    	 	  <ul>
+    	 	  	 <li>基本信息</li>
+    	 	  </ul>
+    	 </div>
+    	 <div class="Essential">
+    	 	 <div class="Essential_tite">
+    	 	 	 <p>您好！大宝</p>
+    	 	 	 <p>尊敬的贵宾，以下是您的注册个人信息</p>
+    	 	 </div>
+    	 	 <div class="Essential_cont">
+    	 	 	 <div class="minter">
+    	 	 	 	 <div class="domt_left">
+    	 	 	 	 	头像
+    	 	 	 	 </div>
+    	 	 	 	 <div class="domt">
+    	 	 	 	 	<div id="preview1">
+    	 	 	 	 		<img src="img/ge.png">
+    	 	 	 	 	</div>
+                        <input class="fileweb" type="file" onchange="preview(this)" />
+                        <div class="heilrt"><img src="img/sc.png" ></div>
+    	 	 	 	 </div>
+    	 	 	 	  
+    	 	 	 </div>
+    	 	 	 <div class="minter">
+    	 	 	 	 <div class="minter_left">
+    	 	 	 	 	姓名
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_left_nr">
+    	 	 	 	 	王晓晓
+    	 	 	 	 </div>
+    	 	 	 </div>
+    	 	 	 <div class="minter">
+    	 	 	 	 <div class="minter_left">
+    	 	 	 	 	身份证号
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_left_nr">
+    	 	 	 	 	1521231232123****2333
+    	 	 	 	 </div>
+    	 	 	 </div>
+    	 	 	 <div class="minter">
+    	 	 	 	 <div class="minter_left">
+    	 	 	 	 	手机号
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_left_nr">
+    	 	 	 	 	13578994561
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_right astb1">
+    	 	 	 	 	修改
+    	 	 	 	 </div>
+    	 	 	 </div>
+    	 	 	 <div class="minter">
+    	 	 	 	 <div class="minter_left">
+    	 	 	 	 	电子邮箱
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_left_nr">
+    	 	 	 	 	1234567@qq.com
+    	 	 	 	 </div>
+    	 	 	 	 <div class="minter_right astb2">
+    	 	 	 	 	修改
+    	 	 	 	 </div>
+    	 	 	 </div>
+    	 	 	 <!--<input type="button" value="确认" class="web_but_1 tcon" data-msg="您是否确认？" />-->
+    	 	 </div>
+    	 </div>
+    </div>	
+
+</body>
+<script type="text/html" id="enction">
+	<div class="enction_tite">
+	 	修改手机号
+	 </div>
+	 <div class="enction_cont">
+	 	 <div class="enction_diti">
+	 	 	  <div class="enction_diti_left">
+	 	 	  	  原手机号
+	 	 	  </div>
+	 	 	  <div class="enction_diti_right">
+	 	 	  	  <input type="text" placeholder="请输入原手机号" />
+	 	 	  </div>
+	 	 </div>
+	 	 <div class="enction_diti">
+	 	 	  <div class="enction_diti_left">
+	 	 	  	  验证码
+	 	 	  </div>
+	 	 	  <div class="enction_diti_right">
+	 	 	  	  <input type="text" placeholder="请输入验证码" class="binort" />
+	 	 	  	  <input type="button" value="获取验证码" class="binort1"/>
+	 	 	  </div>
+	 	 </div>
+	 	 <div class="enction_diti">
+	 	 	  <div class="enction_diti_left">
+	 	 	  	  新手机号
+	 	 	  </div>
+	 	 	  <div class="enction_diti_right">
+	 	 	  	  <input type="text" placeholder="请再次输入新手机号" />
+	 	 	  	  
+	 	 	  </div>
+	 	 </div>
+	 	 <div class="dister">
+	 	 	  <input type="button" value="取消" class="dister_but_1" />
+	 	 	  <input type="button" value="确认" class="dister_but_2"/>
+	 	 </div>
+	 </div>
+</script>
+<script type="text/html" id="enction1">
+	<div class="enction_tite">
+ 	     修改邮箱
+	 </div>
+	 <div class="enction_cont">
+	 	 <div class="enction_diti">
+	 	 	  <div class="enction_diti_left">
+	 	 	  	  原邮箱
+	 	 	  </div>
+	 	 	  <div class="enction_diti_right">
+	 	 	  	  <input type="text" placeholder="请输入原邮箱" />
+	 	 	  </div>
+	 	 </div>
+	 	 <div class="enction_diti">
+	 	 	  <div class="enction_diti_left">
+	 	 	  	  新邮箱
+	 	 	  </div>
+	 	 	  <div class="enction_diti_right">
+	 	 	  	  <input type="text" placeholder="请输入新邮箱" />
+	 	 	  </div>
+	 	 </div>
+	 	 <div class="dister">
+		 	 	<input type="button" value="取消" class="dister_but_1" />
+	 	 	  	<input type="button" value="确认" class="dister_but_2"/>
+	 	 </div>
+	 </div>
+</script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="js/iframe.js"></script>
+<script type="text/javascript">
+  function preview(file) {
+    var prevDiv1 = document.getElementById('preview1');
+    if (file.files && file.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(evt) {
+        prevDiv1.innerHTML = '<img src="' + evt.target.result + '" />';
+      }
+      reader.readAsDataURL(file.files[0]);
+    } else {
+      prevDiv1.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';
+    }
+  }
+  </script>
+
+</html>

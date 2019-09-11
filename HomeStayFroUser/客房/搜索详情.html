@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" href="../css/jquery.datetimepicker.css">
+		<link rel="stylesheet" href="../css/css.css">
+		<link rel="stylesheet" href="../assets/css/amazeui.css">
+	</head>
+
+	<body ondragstart="return false" style="background-color: #F2F2F4;">
+		<!--页头-->
+		<div class="web_header">
+			<div class="headers">
+				<div class="header_bots">
+					<a>商家登录</a>
+					<span>
+	                	App下载
+	                	<div class="qr_code">
+							<img src="../img/ewm.png" alt="" />
+							<p>Android客户端下载</p>
+							<img src="../img/ewm.png" alt="" />
+							<p>IOS客户端下载</p>
+						</div>
+                	</span>
+				</div>
+				<div class="header_nav">
+					<ul>
+						<li>
+							<a>您好，请登录</a>
+						</li>
+						<li>
+							<a>现在注册</a>
+						</li>
+						<li>
+							<a>订单管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="web_logo web_logo_line">
+			<div class="min_lgpr">
+				<div class="min_lgpr_left">
+					<div class="logo">
+						<img src="..\img\logo.png">
+					</div>
+					<div class="Welco">
+						<p>我是一句宣传语</p>
+						<span>24小时客服：400-000-0000</span>
+					</div>
+				</div>
+				<div class="min_lgpr_right">
+					<a class="web_Discount">
+						<img src="..\img/sy2.png">
+					</a>
+					<a class="web_business">
+						注册成为商家
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--房间类型-->
+		<div class="address_type">
+			<div>
+				<!--城市-->
+				<div class="type_div">
+					<p>城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</p>
+					<select name="" id="">
+						<option value="">行政区</option>
+						<option value="">西青区</option>
+						<option value="">南开区</option>
+						<option value="">和平区</option>
+						<option value="">城厢区</option>
+						<option value="">河北区</option>
+						<option value="">河东区</option>
+						<option value="">新华区</option>
+						<option value="">河西区</option>
+						<option value="">红桥区</option>
+					</select>
+					<p>入住时间</p>
+					<b class="time_fill" style="margin: 0;">
+                        <input type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" placeholder="2017-12-11"/>
+                    </b>
+					<p style="margin-left: 20px;">离开时间</p>
+					<b class="time_fill" style="margin: 0;">
+                       <input type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" placeholder="2017-12-13"/>
+                    </b>
+                    <b class="time_fill_p" style="margin-left: 20px;">
+                       <input type="text" class="" placeholder="输入关键字..."/>
+                    </b>
+					<input type="button" class="web_but_7" value="搜索" />
+				</div>
+				<!--入住时间-->
+				<div class="show_check">
+				<p>景&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</p>
+					<p>
+						<input class="" type="checkbox" id="anort1" >
+						<label for="anort1"></label>
+						<label for="anort1">湖</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="anort2" >
+						<label for="anort2"></label>
+						<label for="anort2">海</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="anort3" >
+						<label for="anort3"></label>
+						<label for="anort3">江</label>
+					</p>
+					
+				</div>
+				<!--房间类型-->
+				<div class="show_check">
+					<p>房间类型</p>
+					<p>
+						<input class="" type="checkbox" id="type1" name="house_type">
+						<label for="type1"></label>
+						<label for="type1">民宿</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="type2" name="house_type">
+						<label for="type2"></label>
+						<label for="type2">大床房</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="type3" name="house_type">
+						<label for="type3"></label>
+						<label for="type3">双人房</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="type4" name="house_type">
+						<label for="type4"></label>
+						<label for="type4">三人房</label>
+					</p>
+					
+					
+					
+					
+					
+					
+				</div>
+				<!--风格-->
+				<div class="show_check">
+				
+					<p>风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</p>
+					<p>
+						<input class="" type="checkbox" id="style1" name="house_type">
+						<label for="style1"></label>
+						<label for="style1">温馨型</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="style2" name="house_type">
+						<label for="style2"></label>
+						<label for="style2">田园风</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="style3" name="house_type">
+						<label for="style3"></label>
+						<label for="style3">中式风</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="style4" name="house_type">
+						<label for="style4"></label>
+						<label for="style4">民族风</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="style5" name="house_type">
+						<label for="style5"></label>
+						<label for="style5">西式风</label>
+					</p>
+					
+					
+				</div>
+				
+				<!--设施-->
+				<div class="show_check">
+					<p>设&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;施</p>
+					<p>
+						<input class="" type="checkbox" id="facilities1" name="facilities">
+						<label for="facilities1"></label>
+						<label for="facilities1">沐浴</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities2" name="facilities">
+						<label for="facilities2"></label>
+						<label for="facilities2">空调</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities3" name="facilities">
+						<label for="facilities3"></label>
+						<label for="facilities3">电视</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities4" name="facilities">
+						<label for="facilities4"></label>
+						<label for="facilities4">允许做饭</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities5" name="facilities">
+						<label for="facilities5"></label>
+						<label for="facilities5">暖气</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities6" name="facilities">
+						<label for="facilities6"></label>
+						<label for="facilities6">独立</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities7" name="facilities">
+						<label for="facilities7"></label>
+						<label for="facilities7">洗衣</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="facilities8" name="facilities">
+						<label for="facilities8"></label>
+						<label for="facilities8">车位</label>
+					</p>
+				</div>
+				<!--星级-->
+				<div class="show_check">
+					<p>等&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</p>
+					<p>
+						<input class="" type="checkbox" id="star1" name="star">
+						<label for="star1"></label>
+						<label for="star1">一星</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="star2" name="star">
+						<label for="star2"></label>
+						<label for="star2">二星</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="star3" name="star">
+						<label for="star3"></label>
+						<label for="star3">三星</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="star4" name="star">
+						<label for="star4"></label>
+						<label for="star4">四星</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="star5" name="star">
+						<label for="star5"></label>
+						<label for="star5">五星</label>
+					</p>
+				</div>
+				<!--户型-->
+				<div class="show_check">
+					<p>户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</p>
+					<p>
+						<input class="" type="checkbox" id="house1" name="house">
+						<label for="house1"></label>
+						<label for="house1">一居</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="house2" name="house">
+						<label for="house2"></label>
+						<label for="house2">二居</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="house3" name="house">
+						<label for="house3"></label>
+						<label for="house3">三居</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="house4" name="house">
+						<label for="house4"></label>
+						<label for="house4">四居</label>
+					</p>
+					<p>
+						<input class="" type="checkbox" id="house5" name="house">
+						<label for="house5"></label>
+						<label for="house5">其他</label>
+					</p>
+				</div>
+				<!--价格-->
+				<div class="type_div">
+					<p>风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</p>
+					<p>
+						<input type="checkbox" id="price1" name="price">
+						<label for="price1">100-200</label>
+					</p>
+					<p>
+						<input type="checkbox" id="price2" name="price">
+						<label for="price2">300-400</label>
+					</p>
+					<p>
+						<input type="checkbox" id="price3" name="price">
+						<label for="price3">500-600</label>
+					</p>
+					<p>
+						<input type="checkbox" id="price4" name="price">
+						<label for="price4">700-800</label>
+					</p>
+					<p>
+						<input type="checkbox" id="price5" name="price">
+						<label for="price5">900-1000</label>
+					</p>
+					<p>自定义</p>
+					<p class="custom_price">
+						<input type="text" placeholder="¥">
+						<b></b>
+						<input type="text" placeholder="¥">
+					</p>
+				</div>
+			</div>
+			<!--蓝条-->
+			<div class="blue_line">
+				<div>
+					<button>清除全部条件</button>
+				</div>
+			</div>
+		</div>
+		<!--页中-->
+		<div class="web_center">
+			<!--排序方式-->
+			<div class="sorting clear">
+				<div class="sotrBtn right">
+					<button>优惠优先</button>
+					<button>价格由低到高</button>
+					<button>星级由低到高</button>
+				</div>
+			</div>
+			<!--图片列表-->
+			<div class="imgList">
+				<ul class="clear">
+					<li>
+						<a>
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy10.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq10.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="center_list">
+						<a >
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy11.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq11.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a >
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy12.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq12.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a >
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy10.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq10.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="center_list">
+						<a >
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy11.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq11.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a >
+							<div class="list_heart"><img src="../img/xq07.png" /></div>
+							<img src="../img/sy12.png" />
+							<div class="imgList_title">
+								<h1>名称名称名称名称名称</h1>
+								<div class="clear">
+									<p>民宿</p>
+									<b></b>
+									<p>3张床/易住6人</p>
+									<div class="priceIcon">
+										<p>¥250</p>
+										<p>起/晚</p>
+									</div>
+									<div class="headIcon">
+										<img src="../img/xq12.png" alt="" />
+									</div>
+									<div class="star_evaluate_static star_position_3">
+										<div class="star_active" style="width: 150px;"></div>
+									</div>
+								</div>
+								<div>
+									<p>天津市</p>
+									<b></b>
+									<p>河北区</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--分页-->
+			<div class="paging">
+				<ul data-am-widget="pagination" class="am-pagination am-pagination-default">
+					<li class="am-pagination-first ">
+						<a href="#" class="">首页</a>
+					</li>
+
+					<li class="am-pagination-prev ">
+						<a href="#" class="">上一页</a>
+					</li>
+					<li class="am-active">
+						<a href="#" class="am-active">1</a>
+					</li>
+					<li class="">
+						<a href="#" class="">2</a>
+					</li>
+					<li class="">
+						<a href="#" class="">3</a>
+					</li>
+					<li class="">
+						<a href="#" class="">4</a>
+					</li>
+					<li class="">
+						<a href="#" class="">5</a>
+					</li>
+					<li class="">
+						<a href="#" class="">6</a>
+					</li>
+					<li class="">
+						<a href="#" class="">...</a>
+					</li>
+					<li class="am-pagination-next ">
+						<a href="#" class="">下一页</a>
+					</li>
+
+					<li class="am-pagination-last ">
+						<a href="#" class="">尾页</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<!--页尾-->
+		<div class="web_footer">
+			<div class="forter">
+				<div class="forter_left">
+					<div class="forter_logo">
+						<img src="..\img/logo2.png">
+					</div>
+					<div class="web_midst">
+						<a>常见问题</a>
+						<a>客房指南</a>
+						<p>联系电话：400-000-0000</p>
+						<p>酒店加盟电话：022-12345678</p>
+					</div>
+				</div>
+				<div class="forter_right">
+					<div class="web_ewm left">
+						<img src="..\img/ewm.png" />
+						<p> Android客户端下载 </p>
+					</div>
+					<div class="web_ewm right">
+						<img src="..\img/ewm.png" />
+						<p>IOS客户端下载 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			版权所有版权所有版权所有版权所有版权所有版权所有版权所有 备案信息备案信息备案信息备案信息备案信息备案信息
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../layer/layer.js"></script>
+	<script src="../js/js.js"></script>
+	<script src="../assets/js/amazeui.js"></script>
+	<script src="../time/WdatePicker.js"></script>
+	<script>
+		
+		/*分頁*/
+		var data = {}
+	</script>
+	<script type="text/javascript">
+		$(".logo img").click(function () {
+			window.location.href = "../index.html";
+		})
+	</script>
+</html>

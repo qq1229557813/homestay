@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		
+		<link rel="stylesheet" href="../css/css.css">
+	</head>
+
+	<body ondragstart="return false" style="background-color: #F2F2F4;">
+		<!--页头-->
+		<div class="web_header">
+			<div class="headers">
+				<div class="header_bots">
+					<a>商家登录</a>
+					<span>
+	                	App下载
+	                	<div class="qr_code">
+							<img src="../img/ewm.png" alt="" />
+							<p>Android客户端下载</p>
+							<img src="../img/ewm.png" alt="" />
+							<p>IOS客户端下载</p>
+						</div>
+                	</span>
+				</div>
+				<div class="header_nav">
+					<ul>
+						<li>
+							<a>您好，请登录</a>
+						</li>
+						<li>
+							<a>现在注册</a>
+						</li>
+						<li>
+							<a>订单管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="web_logo web_logo_line">
+			<div class="min_lgpr">
+				<div class="min_lgpr_left">
+					<div class="logo">
+						<img src="..\img\logo.png">
+					</div>
+					<div class="Welco">
+						<p>我是一句宣传语</p>
+						<span>24小时客服：400-000-0000</span>
+					</div>
+				</div>
+				<div class="min_lgpr_right">
+					<a class="web_Discount">
+						<img src="..\img/sy2.png">
+					</a>
+					<a class="web_business">
+						注册成为商家
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--页中-->
+		<div class="web_center">
+			<form class="main">
+				<div class="title">
+					<h1>Full in the Order</h1>
+					<h2>填写订单</h2>
+					<b class="b1"></b>
+					<b class="b2"></b>
+				</div>
+				<!--入住信息-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx01.png" alt="">
+						<div>入住信息</div>
+					</div>
+					<div class="message_detail">
+						<p>房源信息&nbsp;:<b>名称名称名称</b></p>
+						<p>房东用户名&nbsp;:<b>房东名</b></p>
+						<p>
+							入住时段&nbsp;:
+							<b class="time_fill">
+                            <input type="text" name="beginDate" id="beginDate"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" placeholder="2017-12-11"/>
+                        </b>
+							<b class="time_fill">
+                            <input type="text" id="endDate" name="endDate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd' ,minDate:'#F{$dp.$D(\'beginDate\')}'})" placeholder="2017-12-13"/>
+                        </b>
+							<b class="blueSpan">共<span>3</span>晚</b>
+						</p>
+						<p class="predetermined">预定数量&nbsp;:
+							<b>
+                            <button type="button" class="left pre_btn_lf">-</button>
+                            <span class="num">0</span>
+                            <button type="button" class="right pre_btn_rt">+</button>
+                        </b>
+						</p>
+					</div>
+				</div>
+				<!--入住人信息-->
+				<div class="message ">
+					<div class="message_title">
+						<img src="../img/tx02.png" alt="">
+						<div>入住人信息</div>
+					</div>
+					<div class="message_detail">
+						<div class="message_detail_addpson">
+							<p class="trueP">
+								真实姓名&nbsp;:
+								<b class="time_fill"><input type="text" class="trueInput" placeholder="请确保信息真实"/></b>
+								<b class="trueB">*</b>
+							</p>
+							<p class="trueP">
+								手机号&nbsp;:
+								<b class="time_fill"><input type="text" class="trueInput" placeholder="请确保信息真实"/></b>
+								<b class="trueB">*</b>
+							</p>
+							<p class="trueP" style="display: block">
+								身份证号&nbsp;:
+								<b class="time_fill"><input type="text" class="trueInput" placeholder="请确保信息真实"/></b>
+								<b class="trueB">*</b>
+								<span class="remove_person"><b></b></span>
+							</p>
+							
+						</div>
+						<button type="button" class="addpson">添加入住人</button>
+					</div>
+				</div>
+				<!--预订人信息-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx03.png" alt="">
+						<div>预订人信息</div>
+					</div>
+					<div class="message_detail">
+						<p class="trueP" style="color: #8C8C8C;margin-right: 122px;">
+							姓名&nbsp;:
+							<b>王某某</b>
+						</p>
+						<p class="trueP" style="color: #8C8C8C">
+							手机号&nbsp;:
+							<b>+86&nbsp;&nbsp;13683285954</b>
+						</p>
+					</div>
+				</div>
+				<!--优惠券-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx04.png" alt="">
+						<div>优惠券</div>
+					</div>
+					<div class="message_detail">
+						<table cellspacing="0px" class="coupons_table">
+							<thead>
+								<tr>
+									<th>选择</th>
+									<th>劵号</th>
+									<th>面值</th>
+									<th>有效期开始</th>
+									<th>有效期结束</th>
+									<th>状态</th>
+									<th>来源</th>
+									<th>使用说明</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="firstTd"><input id="coupon1" class="" type="checkbox"><label for="coupon1"></label></td>
+									<td>123456789</td>
+									<td>100</td>
+									<td>2017-07-30</td>
+									<td>2017-12-30</td>
+									<td>未使用</td>
+									<td>商家</td>
+									<td>
+										<a class="use_a sinopr">使用说明</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="firstTd"><input id="coupon2" class="" type="checkbox"><label for="coupon2"></label></td>
+									<td>123456789</td>
+									<td>100</td>
+									<td>2017-07-30</td>
+									<td>2017-12-30</td>
+									<td>未使用</td>
+									<td>商家</td>
+									<td>
+										<a class="use_a sinopr">使用说明</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--订单费用信息-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx05.png" alt="">
+						<div>订单费用信息</div>
+					</div>
+					<div class="message_detail clear">
+						<table class="orderCost_table">
+							<thead>
+								<tr>
+									<td>日均价</td>
+									<td>预定数量</td>
+									<td>天数</td>
+									<td>优惠</td>
+									<td>总价</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>¥350.00</td>
+									<td>1</td>
+									<td>3天</td>
+									<td>优惠券</td>
+									<td><span>¥1050.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="right">
+							<b style="margin-right: 40px;">到店付款</b>
+							<b style="margin-right: 40px;">订单金额</b>
+							<span style="font-size: 28px;color: #FAA600;">¥1050.00</span>
+						</div>
+					</div>
+				</div>
+				<!--备注-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx06.png" alt="">
+						<div>备注</div>
+					</div>
+					<div class="message_detail clear">
+						<textarea class="remark" placeholder="请输入备注信息......"></textarea>
+					</div>
+				</div>
+				<!--退订信息-->
+				<div class="message">
+					<div class="message_title">
+						<img src="../img/tx07.png" alt="">
+						<div>退订信息</div>
+					</div>
+					<div class="message_detail clear">
+						<div class="unsubscribe">
+							<p>已参与特价活动，不可退订</p>
+							<p>取消订单和提前退房时间以系统中记录的时间为准。如与房东产生争议，请致电客服电话:400&nbsp;000&nbsp;0000</p>
+							<p>友情提示</p>
+							<p>入住后如您认为照片与房价实质有太大差异，讲对方提供的证据进行认证，如属实，未入住的天数的费用将全部退款。因自然灾害以及其他不可抗力因素导致的退订需求由您和房东协商解决</p>
+							<p>押金将在您入住完成后原路退还，不包含在总房租内。</p>
+						</div>
+					</div>
+				</div>
+				<!--提交按钮-->
+				<div class="unsubscribe_btn">
+					<button class="tcon" data-msg="是否提交？" type="button" value="">提交订单</button>
+				</div>
+			</form>
+		</div>
+
+		<!--页尾-->
+		<div class="web_footer">
+			<div class="forter">
+				<div class="forter_left">
+					<div class="forter_logo">
+						<img src="..\img/logo2.png">
+					</div>
+					<div class="web_midst">
+						<a>常见问题</a>
+						<a>客房指南</a>
+						<p>联系电话：400-000-0000</p>
+						<p>酒店加盟电话：022-12345678</p>
+					</div>
+				</div>
+				<div class="forter_right">
+					<div class="web_ewm left">
+						<img src="..\img/ewm.png" />
+						<p> Android客户端下载 </p>
+					</div>
+					<div class="web_ewm right">
+						<img src="..\img/ewm.png" />
+						<p>IOS客户端下载 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			版权所有版权所有版权所有版权所有版权所有版权所有版权所有 备案信息备案信息备案信息备案信息备案信息备案信息
+		</div>
+		
+	</body>
+
+	<script type="text/html" id="sinopr">
+		<div class="wert_p">
+	    	<p>1.内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+	    	<p>2.内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+	    	<p>3.内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+	    	<p>3.内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+    	</div>
+	</script>
+
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../layer/layer.js"></script>
+	<script src="../js/js.js"></script>
+	<script src="../time/WdatePicker.js"></script>
+	<script type="text/javascript">
+		$(".logo img").click(function () {
+			window.location.href = "../index.html";
+		})
+	</script>
+</html>
